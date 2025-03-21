@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap");
+*{
+    font-family: Instrument Sans, sans-serif;
+}
+/* Hero Section */
+.hero-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-container::after {
+  content: "";
+  filter: blur(20px);
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 13%;
+  bottom: 0;
+  background: linear-gradient(180deg, transparent 0%, rgb(255, 255, 255) 100%);
+  pointer-events: none;
+}
+
+/* Hero Content */
+.hero-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 5% 0;
+}
+
+/* Sections */
+.leftSection {
+  flex: 70%;
+  height: 100%;
+  padding: 5%;
+}
+
+/* First Line (Tagline) */
+.firstLine {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 2px;
+  border: 1px solid #d8a7ff;
+  border-radius: 25px;
+}
+
+.firstLine span {
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #fff;
+  padding: 3px 20px;
+  text-align: center;
+  position: relative;
+}
+
+/* Vertical Line Separator */
+.firstLine span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 60%;
+  width: 1px;
+  background-color: #d8a7ff;
+}
+
+.firstGroup p {
+  color: white;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 200;
+  font-size: 11px;
+}
+.firstGroup {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  letter-spacing: 2px;
+}
+
+.secondGroup {
+    position: relative
+}
+
+.secondGroup h1 {
+  font: 600 50px Instrument Sans, sans-serif;
+  color: #fff;
+  line-height: 70px;
+  padding: 20px 0px;
+}
+
+.secondGroup h3 {
+  font: 300 18px Instrument Sans, sans-serif;
+  color: #fff;
+  line-height: 26px;
+}
+
+.secondGroup p {
+  font: 500 18px Instrument Sans, sans-serif;
+  font-style: italic;
+  color: #fff;
+  line-height: 86px;
+  position: relative
+}
+
+.thirdGroup {
+    margin-top: 3%;
+display: flex;
+}
+.thirdGroup .ctaButtons {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+.thirdGroup .ctaButtons .first {
+  background-color: white;
+  padding: 10px;
+  width: 25%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 10px;
+  box-shadow: 0px 2px 5.1px 0px #00000057;
+  color: #8f00ff;
+  font-weight: 500;
+  font-family: Instrument Sans;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+      width: 100%;
+}
+
+.thirdGroup .ctaButtons .second {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 10px;
+  width: 25%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0px 2px 5.1px 0px #00000057;
+  font-weight: 500;
+  font-family: Instrument Sans;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+      width: 100%;
+}
+
+.thirdGroup .ctaButtons .first,
+.thirdGroup .ctaButtons .second {
+  height: 50px; /* Fixed height */
+  display: flex;
+  align-items: center; /* Ensures text stays centered vertically */
+  justify-content: center; /* Centers text horizontally */
+  text-align: center;
+}
+
+.thirdGroup .certifiedIcons  {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    top: -10px;
+}
+.thirdGroup .certifiedIcons .icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: white;
+  box-shadow: 0px 2px 5.1px 0px #00000057;
+  border-radius: 50%;
+}
+
+
+.rightSection {
+    flex: 30%;
+    height: 100%;
+    padding: 5%;
+    display: flex;
+    justify-content: end;
+    padding-right: 0px;
+    position: relative;
+    left: 10px;
+    flex-direction: column;
+    gap: 35px;
+  }
+  
+
+.rightSection .firstBox,.secondBox,.thirdBox{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: -4px 6px 5.7px 0px #00000024;
+
+    background-color: white;
+    height: 37%;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+.rightSection .firstBox .firstBoxCircle, .secondBoxCircle, .thirdBoxCircle {
+    width: 30%;
+    height: 100%;
+    box-shadow: 0px 0px 5px 0px #E4C0FF inset;
+    border-radius: 100%;
+}
